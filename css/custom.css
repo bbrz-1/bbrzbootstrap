@@ -4,3 +4,16 @@ body {
     background-image: url('../images/pattern.png');
     background-repeat: repeat;
   }
+
+  .table th{
+    background-color: white;
+  }
+
+  .quote {
+    border: 1px solid rgb(105, 177, 233);
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
