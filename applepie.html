@@ -4,24 +4,30 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Bethany's Pie Shop</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
 
     <main role="main">
-        <div>
-            <h1>Apple pie
-                <small>Our famous, number-one selling pie.</small>
-            </h1> 
+        <div class="container-fluid">
             
-            <div >
-                <div>
-                    <img src="images/products/applepie.jpg" alt="Image of apple pie">
+            <h1 class="fw-bolder">Apple pie
+                <small class="fw-normal fst-italic">Our famous, number-one selling pie.</small>
+            </h1>
+
+            <div style="display: none" class="alert alert-success mt-3">
+                <strong>Success!</strong> Apple pie was added to your shopping cart.
+            </div>
+
+            <div class="row">
+                <div class="col-sm-8">
+                    <img src="images/products/applepie.jpg" alt="Image of apple pie" class="rounded" style="width: 60%";>
                 </div>
 
-                <div>
+                <div class="col-sm-4">
                     <h3>About this pie</h3>
                     <p>Sweet ice cream jelly beans lemon drops. Pastry toffee fruitcake gingerbread jelly-o.
                         Lollipop sesame snaps muffin. Macaroon halvah marshmallow sesame snaps sugar plum dragée.
@@ -33,16 +39,97 @@
                         <li>Eggs</li>
                         <li>Milk</li>
                     </ul>
-                    <div>
-                        <div>
+                    
+                    <div class="row">
+                        <div class="col-4">
                             <strong>$14.95</strong>
                         </div>
-                        <div >
-                            <a type="button" href="shoppingbasket.html">
+                        <div class="col-8">
+                            <a type="button" href="shoppingbasket.html" class="btn btn-success">
                                 Add to basket
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="card m-auto border border-primary rounded">
+                <h4>A quote from Bethany</h4>
+                <p class="card-text">My recipes have been in our family for generations. We hope you enjoy our
+                    pies! -
+                    Bethany
+                </p>
+            </div>
+
+
+            <div class="container table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Risk</th>
+                            <th>Percentage</th>
+                            <th>Ingredient</th>
+                            <th>Risk</th>
+                            <th>Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Apple</td>
+                            <td>Yes</td>
+                            <td>50%</td>
+                            <td>Apple</td>
+                            <td>Yes</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Eggs</td>
+                            <td>Yes</td>
+                            <td>10%</td>
+                            <td>Apple</td>
+                            <td>Yes</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>Nuts</td>
+                            <td>Maybe</td>
+                            <td>&lt;0.1%</td>
+                            <td>Apple</td>
+                            <td>Yes</td>
+                            <td>50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            
+            
+			<h3>Other customers also bought...</h3>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <a href="applepie.html">
+                        <img class="img-fluid" src="images/products/strawberrypiesmall.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <a href="applepie.html">
+                        <img class="img-fluid" src="images/products/rhubarbpiesmall.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <a href="applepie.html">
+                        <img class="img-fluid" src="images/products/peachpiesmall.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-md-3">
+                    <a href="applepie.html">
+                        <img class="img-fluid" src="images/products/cranberrypiesmall.jpg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
