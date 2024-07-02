@@ -1,0 +1,16 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url('../images/pattern.png');
+    background-repeat: repeat;
+  }
+  .custom-control-input:checked ~ .custom-control-label::before,
+        .custom-control-input ~ .custom-control-label::before {
+            background-color: white;
+        }
+        .promo-code-container {
+            border: 1px solid #ced4da;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
