@@ -65,7 +65,8 @@
 
                 <div class="col-12 mb-3">
                     <label for="email" class="form-label">Email (Optional):</label>
-                    <input required type="email" name="email" id="email" class="form-control" placeholder="you@example.com">
+                    <input required type="email" name="email" id="email" class="form-control"
+                        placeholder="you@example.com">
                     <div class="invalid-feedback">
                         Field Must Not Be Empty
                     </div>
@@ -73,7 +74,8 @@
 
                 <div class="col-12 mb-3">
                     <label for="address" class="form-label">Address:</label>
-                    <input required type="text" name="address" id="address" class="form-control" placeholder="1234 Main St">
+                    <input required type="text" name="address" id="address" class="form-control"
+                        placeholder="1234 Main St">
                     <div class="invalid-feedback">
                         Field Must Not Be Empty
                     </div>
@@ -81,7 +83,8 @@
 
                 <div class="col-12 mb-3">
                     <label for="address2" class="form-label">Address 2:</label>
-                    <input type="text" name="address2" id="address2" class="form-control" placeholder="Apartment or suite">
+                    <input type="text" name="address2" id="address2" class="form-control"
+                        placeholder="Apartment or suite">
                 </div>
 
                 <div class="col-6 mb-3">
@@ -172,32 +175,34 @@
                     </div>
                 </div>
 
-                <div class="col-6 mb-3">
-                    <input required type="text" name="cardname" id="cardname" placeholder="Name on card"
+                <div class="form-floating col-6 mb-3">
+                    <input required type="text" name="cardname" id="cardname" placeholder="Name on Card"
                         class="form-control">
+                    <label for="cardname">Name on Card</label>
                     <div class="invalid-feedback">
                         Field Must Not Be Empty
                     </div>
                 </div>
 
-                <div class="col-6 mb-3">
-                    <input required type="text" name="cardnumber" id="cardnumber" placeholder="Credit card number"
-                        class="form-control">
+                <div class="form-floating col-6 mb-3">
+                    <input required type="text" name="cardnumber" id="cardnumber" class="form-control" placeholder="Credit Card Number">
+                    <label for="cardnumber">Credit Card Number</label>
                     <div class="invalid-feedback">
                         Field Must Not Be Empty
                     </div>
                 </div>
 
-                <div class="col-3" mb-3>
-                    <input required type="text" name="cardexpiration" id="cardexpiration" placeholder="Expiration"
-                        class="form-control">
+                <div class="form-floating col-3" mb-3>
+                    <input required type="text" name="cardexpiration" id="cardexpiration" class="form-control" placeholder="Expiration">
+                    <label for="cardexpiration">Expiration</label>
                     <div class="invalid-feedback">
                         Field Must Not Be Empty
                     </div>
                 </div>
 
-                <div class="col-3 mb-3">
-                    <input required type="text" name="ccv" id="ccv" placeholder="CCV" class="form-control">
+                <div class="form-floating col-3 mb-3">
+                    <input required type="text" name="ccv" id="ccv" class="form-control" placeholder="CCV">
+                    <label for="ccv">CCV</label>
                     <div class="invalid-feedback">
                         Field Must Not Be Empty
                     </div>
