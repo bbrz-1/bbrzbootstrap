@@ -1,0 +1,14 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url('../images/pattern.png');
+    background-repeat: repeat;
+  }
+
+.custom {
+  background-color: rgb(255, 250, 244);
+}
+
+.custom-color {
+  background-color: #a593c2;
+}

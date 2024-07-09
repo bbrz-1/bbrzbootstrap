@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/custom.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <form class="row g-3 col-lg-8 needs-validation" novalidate>
+
+                    <h1>Your address</h1>
+
+                    <div class="col-md-6">
+                        <label for="inputfname" class="form-label">Firstname</label>
+                        <input type="text" class="form-control" id="inputfname" required>
+                        <div class="invalid-feedback">
+                            Please enter your firstname.
+                        </div>                    
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputlname" class="form-label">Lastname</label>
+                        <input type="text" class="form-control" id="inputlname" required>
+                        <div class="invalid-feedback">
+                            Please enter your lastname.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="inputUser" class="form-label">Username</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" id="inputUser" placeholder="Username" aria-describedby="basic-addon1" required>
+                            <div class="invalid-feedback">
+                                Please choose an username.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="inputEmail" class="form-label">Email <span id="emailHelp" class="form-text">(Optional)</span></label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="you@example.com">
+                    </div>
+
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+                        <div class="invalid-feedback">
+                            Please enter your address.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Address 2 <span id="emailHelp" class="form-text">(Optional)</span></label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">Country</label>
+                        <select id="inputCity" class="form-select" required>
+                            <option selected value="">Choose...</option>
+                            <option>Belgium</option>
+                            <option>France</option>
+                            <option>Germany</option>
+                            <option>United Kingdom</option>
+                            <option>United States</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select" required>
+                            <option selected value="">Choose...</option>
+                            <option>Not applicable</option>
+                            <option>Alabama</option>
+                            <option>Alaska</option>
+                            <option>Arizona</option>
+                            <option>Arkansas</option>
+                            <option>California</option>
+                            <option>Colorado</option>
+                            <option>Connecticut</option>
+                            <option>Delaware</option>
+                            <option>Florida</option>
+                            <option>Georgia</option>
+                            <option>Hawaii</option>
+                            <option>Idaho</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" required>
+                        <div class="invalid-feedback">
+                            Please enter the ZIP.
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="1" id="flexCheckShipping">
+                        <label class="form-check-label" for="flexCheckShipping">
+                            Shipping address is the same as my billing address
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="2" id="flexCheckSave">
+                        <label class="form-check-label" for="flexCheckSave">
+                            Save this information for next time
+                        </label>
+                    </div>
+
+                    <hr>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Credit card
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Debit card
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                        <label class="form-check-label" for="flexRadioDefault3">
+                            PayPal
+                        </label>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Name on card" required>
+                        <div id="emailHelp" class="form-text">Full name as displayed on card</div>
+                        <div class="invalid-feedback">
+                            Please enter the name on the card.
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Credit card number" required>
+                        <div class="invalid-feedback">
+                            Please enter the card number.
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" placeholder="Expiration" required>
+                        <div class="invalid-feedback">
+                            Please enter the expiration date.
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <input type="text" class="form-control" id="CW" required>
+                        <div class="invalid-feedback">
+                            Please enter the CW.
+                        </div>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Place order</button>
+                    </div>
+
+                </form>
+
+                <form class="g-3 col-lg-4">
+
+                    <h1>Redeem coupon</h1>
+
+                    <div class="input-group mb-3 border border-light border-5">
+                        <input type="text" class="form-control" placeholder="Promo code" aria-label="Redeem coupon" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-light bg-secondary" type="button" id="button-addon2">Button</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>
+
+<script src="js/main.js"></script>
