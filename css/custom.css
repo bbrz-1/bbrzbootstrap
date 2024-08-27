@@ -4,3 +4,13 @@ body {
   background-image: url('../images/pattern.png');
   background-repeat: repeat;
 }
+
+input.input-validation-error,
+textarea.input-validation-error {
+  border: solid 1px #b80505;
+  box-shadow: 0px 0px 5px 0px rgba(158,0,0,1);
+}
+
+#pieImageContainer {
+  background-image: url("../images/carousel3.jpg");
+}
