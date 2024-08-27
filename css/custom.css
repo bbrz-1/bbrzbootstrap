@@ -1,0 +1,8 @@
+body {
+	background-image: url("../images/pattern.png");
+	background-repeat: repeat;
+}
+#table th,
+#table td {
+	background-color: rgba(0, 0, 0, 0);
+}
