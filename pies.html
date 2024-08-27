@@ -37,11 +37,15 @@
 		</header>
 		<main class="row">
 			<aside class="col-3">
-				<img src="images/bethanylogo.png" alt="Bethany's Pie Shop" />
+				<img
+					src="images/bethanylogo.png"
+					class="img-fluid w-75 mt-2 mb-4"
+					alt="Bethany's Pie Shop"
+				/>
 			</aside>
 
 			<article class="col-9">
-				<h1>Pies</h1>
+				<h1 class="text-center">Pies</h1>
 
 				<section class="columns-desktop row" id="pies">
 					<!-- Generated HTML goes here -->
@@ -69,15 +73,24 @@
 			console.log(data);
 			$("#pies").append(
 				data.map(function (pie) {
-					return `<div class="pie col">
-          <img class="img-fluid w-75" src="images/products/${pie.id}.jpg" />
-          <h2>${pie.title}</h2>
-          <p>${pie.description}</p>
-          <p>${pie.price}</p>
-          <button class="btn btn-primary">Order</button>
-        </div>`;
+					return `<div class="pie col-3 m-4">
+		        <img class="img-fluid w-90 mt-2" src="images/products/${pie.id}.jpg" />
+		        <div class="d-flex justify-content-between">
+		          <p class="mb-0"><b>${pie.title}</b></p>
+		          <p class="mb-0">$${pie.price}</p>
+		        </div>
+		        <p class="mb-0">${pie.description}</p>
+		        <button type="submit" class="btn btn-primary mb-2 orderbtn" id="${pie.id}">Order</button>
+		      </div>`;
 				})
 			);
+		});
+
+		$(document).ready(function () {
+			console.log("READY");
+			$(".orderbtn").click(function () {
+				alert("TEST");
+			});
 		});
 	</script>
 </html>
