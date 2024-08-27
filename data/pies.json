@@ -3,12 +3,14 @@
         "id": "cherry-pie",
         "title": "Cherry Pie",
         "price": "15.95",
-        "description": "A summer classic!"
+        "description": "A summer classic!",
+        "image": "cherrypie.jpg"	
     },
     {
         "id": "apple-pie",
         "title": "Apple Pie",
         "price": "12.95",
-        "description": "Our famous apple pie"
+        "description": "Our famous apple pie",
+        "image": "applepie.jpg"
     }
 ]
