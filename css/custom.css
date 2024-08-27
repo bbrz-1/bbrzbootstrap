@@ -6,3 +6,7 @@ body {
 #table td {
 	background-color: rgba(0, 0, 0, 0);
 }
+
+.pie {
+	background-color: white;
+}

@@ -35,15 +35,15 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
-			<aside>
+		<main class="row">
+			<aside class="col-3">
 				<img src="images/bethanylogo.png" alt="Bethany's Pie Shop" />
 			</aside>
 
-			<article>
+			<article class="col-9">
 				<h1>Pies</h1>
 
-				<section class="columns-desktop" id="pies">
+				<section class="columns-desktop row" id="pies">
 					<!-- Generated HTML goes here -->
 				</section>
 			</article>
@@ -59,5 +59,25 @@
 			</nav>
 		</footer>
 	</body>
-	<script></script>
+	<script
+		src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		crossorigin="anonymous"
+	></script>
+	<script>
+		$.getJSON("data/pies.json", function (data) {
+			console.log(data);
+			$("#pies").append(
+				data.map(function (pie) {
+					return `<div class="pie col">
+          <img class="img-fluid w-75" src="images/products/${pie.id}.jpg" />
+          <h2>${pie.title}</h2>
+          <p>${pie.description}</p>
+          <p>${pie.price}</p>
+          <button class="btn btn-primary">Order</button>
+        </div>`;
+				})
+			);
+		});
+	</script>
 </html>
