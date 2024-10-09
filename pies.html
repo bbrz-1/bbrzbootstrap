@@ -86,11 +86,8 @@
 			);
 		});
 
-		$(document).ready(function () {
-			console.log("READY");
-			$(".orderbtn").click(function () {
-				alert("TEST");
-			});
+		$(".orderbtn").on("click", function () {
+			let id = $(this).attr("id");
 		});
 	</script>
 </html>
